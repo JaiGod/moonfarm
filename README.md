@@ -122,6 +122,8 @@ Tip: `play/#demo`, `play/#demo-night` and `play/#demo-crew` start a scripted, al
 - **Bug: the smoke-test bot starved.** My first CI bot sent rovers for ice whenever the ice stock was below 30. Recyclers melt ice right away, so that was *always* true. The bot never hauled regolith, couldn't afford a Research Lab, went broke on seeds and lost to low morale around sol 22. The fix was to send rovers for regolith once the ice mission is done and water is healthy. After that, the bot reaches the Harvest Festival on sol 8 without O2 ever dropping below 88.
 - **Bug: screenshots showed "paused: no power".** Demo mode builds a big base so fast that the batteries start empty, and the first shot showed red warnings. Demo mode now starts with charged batteries.
 - **Juice:** floating "+12 regolith" numbers, harvest particles, screen shake on storms, eased panel and toast animations, and astronauts wandering the walkway.
+- **Screenshots from the real build.** The README images were captured from the live GitHub Pages export, using the `#demo` hashes in same-origin iframes at 1280×720 and 390×844.
+- **Beta tested on the live site ✅ (2026-11-05):** opened https://jaigod.github.io/moonfarm/ and `/play/`. The Godot build booted past the loading bar. I clicked *Start mission*, planted the dome (Mission 1 done) and built an O2 Electrolyzer (Mission 2 done). Then I cycled every tab, sped time up, harvested and opened the pause menu. All game files loaded with HTTP 200, and the console showed no errors from the game.
 
 ## 🌌 More JaiGod games
 
